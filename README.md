@@ -1,2 +1,5 @@
-# r-modern-portfolio-theory
-Files for post "Using R to Select an Optimum Stock Portfolio with Modern Portfolio Theory"
+This R script uses Modern Portfolio Theory to provide one answer to this question. Here's how it works:
+
+First, the script loads daily stock price data for all stocks in the S&P 500 index, and the index itself. It trims extreme values and verifies that the stock returns are normally distributed, which is required by the model. Next, it calculates the relationship between each stock and the market as a whole by regressing daily stock returns on daily index values. The coefficient Beta is a measure of how much the return on each stock varies with movements in the overall market. Third, it calculates the excess return to Beta: this is a measure of how much additional return the stock provides relative to the market: the greater the excess return, the greater the potential reward relative to the risk of holding that stock, compared to the overall risk of the market as a whole. Finally, the script estimates a cutoff value based on these excess returns: in this model, the optimum portfolio contains all stocks with an excess return to Beta greater than this cutoff value.
+
+For more details on use, see http://synchronicanalytics.com/index.php/2017/02/21/selecting-an-optimum-stock-portfolio-in-r-with-modern-portfolio-theory/
