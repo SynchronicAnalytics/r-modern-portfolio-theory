@@ -1,6 +1,6 @@
-# CalculateBeta
+# MPTOptimumPortfolio.R
 # Reads a directory of stock return files, calculates the adjusted Beta of the stock, and ranks them.
-# DVS 11/20/2016 - 12/11/201
+# c. 2017 David Schwab
 
 # Preliminaries
 
